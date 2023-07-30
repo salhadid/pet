@@ -28,7 +28,6 @@ class MyHomePage extends StatelessWidget {
     'SHELTERS & RESCUE',
   ];
 
-  // You can use different icons that are suitable for your application.
   final List<IconData> buttonIcons = [
     Icons.report,
     Icons.map,
@@ -55,7 +54,6 @@ class MyHomePage extends StatelessWidget {
                 return Expanded(
                   child: GestureDetector(
                     onTap: () {
-                      // Function to be executed on button press
                       print('Button $index pressed');
                     },
                     child: Container(
