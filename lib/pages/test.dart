@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -61,13 +63,13 @@ class MyHomePage extends StatelessWidget {
                             alignment: Alignment.center,
                             children: <Widget>[
                               Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.purple,
                                   shape: BoxShape.circle,
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
                                 ),
@@ -84,7 +86,7 @@ class MyHomePage extends StatelessWidget {
                           ),
                           Text(
                             buttonLabels[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black,
                             ),
                           ),
