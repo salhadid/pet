@@ -52,42 +52,37 @@ class MyHomePage extends StatelessWidget {
                     onTap: () {
                       print('Button $index pressed');
                     },
-                    child: Container(
-                      margin: const EdgeInsets.all(20.0),
-                      decoration: BoxDecoration(
-                        color: Colors.purple,
-                        shape: BoxShape.circle,
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Stack(
-                          alignment: Alignment.center,
-                          children: <Widget>[
-                            Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                          margin: const EdgeInsets.all(20.0),
+                          decoration: BoxDecoration(
+                            color: Colors.purple,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
                               ),
+                              child: Icon(
+                                buttonIcons[index],
+                                color: Colors.purple,
+                                size: 50,
+                              ),
                             ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  buttonIcons[index],
-                                  color: Colors.purple,
-                                  size: 50,
-                                ),
-                                Text(
-                                  buttonLabels[index],
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
+                        Text(
+                          buttonLabels[index],
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 );
