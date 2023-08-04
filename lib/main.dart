@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'pages/getstartedpage.dart';
 import 'pages/home.dart';
 import 'pages/registration.dart';
+import 'pages/number.dart';
+import 'pages/createnew.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const RegistrationPage(),
+      home: CreateNew(),
     );
   }
 }
